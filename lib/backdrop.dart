@@ -207,14 +207,14 @@ class _BackdropTitle extends AnimatedWidget {
             icon: Stack(children: <Widget>[
               Opacity(
                 opacity: animation.value,
-                child: ImageIcon(AssetImage('assets/slanted_menu.png')),
+                child: Icon(Icons.account_circle, color: Colors.amber,),
               ),
               FractionalTranslation(
                 translation: Tween<Offset>(
                   begin: Offset.zero,
                   end: Offset(1.0, 0.0),
                 ).evaluate(animation),
-                child: ImageIcon(AssetImage('assets/diamond.png')),
+                child: Icon(Icons.account_circle, color: Colors.amber,),
               )]),
           ),
         ),
